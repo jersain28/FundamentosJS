@@ -47,3 +47,12 @@ console.log(doble);
 
 const resultM=multiplica(13, 16);
 console.log(resultM);
+
+// Simplificando Arrow Funtions
+let cambiaMinusculas=(word)=>{
+    return word.toLowerCase();
+}
+
+// Si solo es un unico parametro se pueden omitir parentesis
+// Si la unica Linea es el return se pueden omitir llaves y return 
+cambiaMinusculas=word=>word.toLowerCase();
