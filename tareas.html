@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas con Javascript</title>
+    <style>
+        /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #2c2772; /* Color de texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #557da4;
+}
+
+/* Estilos para el formulario */
+#formulario {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+h2 {
+    color: #b06061;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3d129a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #292a2b;
+}
+
+/* Estilos para la lista de tareas */
+#tareas {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#tareas h2 {
+    color: #628bdd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de tareas con Javascript</h1>
+        <div id="formulario">
+            <h2>Ingresa Tarea</h2>
+            <textarea name="" id="inputTarea" cols="30" rows="5"></textarea>
+            <h3>Hora</h3>
+            <input type="time" name="" id="tiempo">
+            <button onclick="addTarea()">Agregar Tarea</button>
+        </div>
+        <div id="tareas">
+            <h2>Mis Tareas</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>
